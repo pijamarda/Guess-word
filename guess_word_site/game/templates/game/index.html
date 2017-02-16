@@ -1,0 +1,59 @@
+{% extends 'game/base.html' %}
+
+{% block content %}	
+		
+	<div class="col-xs-4">
+		<div id="under_word" class="bg-success"></div>
+		<input type='hidden' id="under_word_letras" value=0 />
+		<input type='hidden' id="under_word_distancia" value=30 />
+		
+		<div class="input-group">
+			<input type='text' id="input_palabra" class="form-control" placeholder="Introduce una palabra"/>
+			<span class="input-group-btn">
+				<button 
+					id="boton_palabra" 		
+					class="btn btn-default palabra_check_ajax"
+					data-intentos="0"
+					type="button">
+					OK
+				</button>
+				</span>
+				<span class="input-group-addon" id="resultado">Empezar!</span>
+				
+
+		</div><!-- /input-group -->		
+		
+		<div id="no_existe"></div>
+		<div id="upper_word" class="bg-danger"></div>
+		<input type='hidden' id="upper_word_letras" value=0 />
+		<input type='hidden' id="upper_word_distancia" value=30 />
+		<div class="row">
+			<div class="col-xs-4"> Intentos: </div>
+			<div id="intentos" class="col-xs-4"> 0 </div>
+			
+		</div>
+		<div class="row">
+			<div class="col-xs-4">
+			<button 
+						id="boton_rindo" 		
+						class="btn btn-default me_rindo"
+						data-palabra="{{palabra_guess}}"
+						type="button">
+						Me Rindo!
+					</button>
+			</div>
+			<div class="col-xs-4" id="me_rindo_resultado">			
+			</div>
+			<div class="col-xs-4" id="me_rindo_reportar">			
+			</div>
+		</div>	
+		<input type='hidden' id="palabra_hidden" value="{{palabra_guess}}" />
+		
+		<div id="link_salvar"></div>
+	</div>
+	<div class="col-xs-4">
+		<p>Listado de palabras validas introducidas:</p>
+		<ul id="listado_palabras">
+		</ul>
+	</div>
+{% endblock content %}

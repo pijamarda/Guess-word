@@ -1,0 +1,56 @@
+
+.page-header {
+    background-color: #ff9400;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;    
+    
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 22pt;    
+    text-decoration: none;
+    
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited, .top-menu a:visited{
+
+    font-size: 16pt;
+    float: right;
+    margin-right: 20px;   
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+h1 a {
+    color: #FCA205;
+}
+
+.content, .nav{
+    padding-left: 25px;
+}
+
+.braket th{
+	border: 1px solid black;
+}
+.braket td{
+	border: 1px solid black;
+}
+
+
+.braket .team{
+	width: 100px;
+	text-align: center;
+	background-color: blue;
+}
+
+.braket .resultado{
+	width: 25px;
+	text-align: center;
+	background-color: green;
+}
+
+.braket .resultado .input{
+    width: 25px;
+    text-align: center;
+}

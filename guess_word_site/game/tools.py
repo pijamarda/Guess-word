@@ -118,7 +118,7 @@ def check_diccionario(guess_palabra, fichero):
 	resultado = False
 	#Primero vamos a contar cuantas filas tiene el fichero
 	#Temporalmente voy a fijar el numero de lineas ya que no cambia y sera mas rapido para DEBUG
-	num_lines = sum(1 for line in open(fichero))
+	num_lines = sum(1 for line in open(fichero, 'r', encoding='utf-8'))
 	#num_lines = 85918	
 
 	with codecs.open(fichero,'r', 'utf-8') as openfile:

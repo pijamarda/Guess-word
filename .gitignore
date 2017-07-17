@@ -5,3 +5,4 @@
 __pycache__/
 virtualGuess/
 settings.py
+guess_word.db
